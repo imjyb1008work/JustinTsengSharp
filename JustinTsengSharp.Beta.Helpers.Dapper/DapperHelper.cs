@@ -2,13 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-
-#if NET35
 using Dapper;
-#else
-using Dapper;
-#endif
-
 #if NET35
 using System.Data.SqlClient;
 #else
@@ -27,17 +21,6 @@ namespace JustinTsengSharp.Beta.Helpers.Dapper
 			}
 		}
 
-		public static DataTable DataTable(string connectionString, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
-		{
-			using (var conn = new SqlConnection(connectionString))
-			{
-				var dr = conn.ExecuteReader(sql, param, transaction, commandTimeout, commandType);
-				var dt = new DataTable();
-				dt.Load(dr);
-				return dt;
-			}
-		}
-
 		public static T QueryFirstOrDefault<T>(string connectionString, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
 		{
 			using (var conn = new SqlConnection(connectionString))
@@ -47,6 +30,17 @@ namespace JustinTsengSharp.Beta.Helpers.Dapper
 #else
 				return conn.QueryFirstOrDefault<T>(sql, param, transaction, commandTimeout, commandType);
 #endif
+			}
+		} 
+
+		public static DataTable GetDataTable(string connectionString, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
+		{
+			using (var conn = new SqlConnection(connectionString))
+			{
+				var dr = conn.ExecuteReader(sql, param, transaction, commandTimeout, commandType);
+				var dt = new DataTable();
+				dt.Load(dr);
+				return dt;
 			}
 		}
 
