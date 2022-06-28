@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32228.430
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustinTsengSharp.Library", "JustinTsengSharp.Library\JustinTsengSharp.Library.csproj", "{32841C87-FBA1-4823-ACF1-F2F7E74090E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinTsengSharp.Library", "JustinTsengSharp.Library\JustinTsengSharp.Library.csproj", "{32841C87-FBA1-4823-ACF1-F2F7E74090E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustinTsengSharp.BetaLibrary", "JustinTsengSharp.BetaLibrary\JustinTsengSharp.BetaLibrary.csproj", "{766AA0BE-0752-4A58-BEE8-8541296ECC7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinTsengSharp.BetaLibrary", "JustinTsengSharp.BetaLibrary\JustinTsengSharp.BetaLibrary.csproj", "{766AA0BE-0752-4A58-BEE8-8541296ECC7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustinTsengSharp.BetaLibrary.Test", "JustinTsengSharp.BetaLibrary.Test\JustinTsengSharp.BetaLibrary.Test.csproj", "{C88D3E2C-DE98-4B05-AEE6-76A736BB8547}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinTsengSharp.BetaLibrary.Test", "JustinTsengSharp.BetaLibrary.Test\JustinTsengSharp.BetaLibrary.Test.csproj", "{C88D3E2C-DE98-4B05-AEE6-76A736BB8547}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinTsengSharp.Beta.ExtensionMethods", "JustinTsengSharp.Beta.ExtensionMethods\JustinTsengSharp.Beta.ExtensionMethods.csproj", "{7675E016-7E4B-4669-9B65-F2CAA744EA19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JustinTsengSharp.Beta.Helpers", "JustinTsengSharp.Beta.Helpers\JustinTsengSharp.Beta.Helpers.csproj", "{24370A02-A091-4714-A4AD-09805090B50D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustinTsengSharp.Beta.Helpers.Dapper", "JustinTsengSharp.Beta.Helpers.Dapper\JustinTsengSharp.Beta.Helpers.Dapper.csproj", "{3B95A941-59B7-421F-B212-E3168454241C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{C88D3E2C-DE98-4B05-AEE6-76A736BB8547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C88D3E2C-DE98-4B05-AEE6-76A736BB8547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C88D3E2C-DE98-4B05-AEE6-76A736BB8547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7675E016-7E4B-4669-9B65-F2CAA744EA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7675E016-7E4B-4669-9B65-F2CAA744EA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7675E016-7E4B-4669-9B65-F2CAA744EA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7675E016-7E4B-4669-9B65-F2CAA744EA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24370A02-A091-4714-A4AD-09805090B50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24370A02-A091-4714-A4AD-09805090B50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24370A02-A091-4714-A4AD-09805090B50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24370A02-A091-4714-A4AD-09805090B50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B95A941-59B7-421F-B212-E3168454241C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B95A941-59B7-421F-B212-E3168454241C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B95A941-59B7-421F-B212-E3168454241C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B95A941-59B7-421F-B212-E3168454241C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

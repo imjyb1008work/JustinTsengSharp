@@ -6,9 +6,9 @@ namespace JustinTsengSharp.BetaLibrary
 {
 	//https://blog.opasschang.com/csharp-struct-usage-notes/
 
-	public class HRDuration
+	public class DateDuration
 	{
-		public HRDuration(DateTime start, DateTime end)
+		public DateDuration(DateTime start, DateTime end)
 		{
 			Start = start;
 			End = end;
@@ -36,7 +36,7 @@ namespace JustinTsengSharp.BetaLibrary
 
 		public int Days { get; }
 
-		public static bool operator ==(HRDuration left, HRDuration right)
+		public static bool operator ==(DateDuration left, DateDuration right)
 		{
 			return
 				left.Years == right.Years
@@ -44,12 +44,12 @@ namespace JustinTsengSharp.BetaLibrary
 				&& left.Days == right.Days;
 		}
 
-		public static bool operator !=(HRDuration left, HRDuration right)
+		public static bool operator !=(DateDuration left, DateDuration right)
 		{
 			return !(left == right);
 		}
 
-		public static bool operator >(HRDuration left, HRDuration right)
+		public static bool operator >(DateDuration left, DateDuration right)
 		{
 			if (left.Years > right.Years) { return true; }
 			if (left.Months > right.Months) { return true; }
@@ -57,7 +57,7 @@ namespace JustinTsengSharp.BetaLibrary
 			return false;
 		}
 
-		public static bool operator <(HRDuration left, HRDuration right)
+		public static bool operator <(DateDuration left, DateDuration right)
 		{
 			if (left.Years < right.Years) { return true; }
 			if (left.Months < right.Months) { return true; }
@@ -65,14 +65,14 @@ namespace JustinTsengSharp.BetaLibrary
 			return false;
 		}
 
-		public static bool operator >=(HRDuration left, HRDuration right)
+		public static bool operator >=(DateDuration left, DateDuration right)
 		{
 			if (left == right) { return true; }
 			if (left > right) { return true; }
 			return false;
 		}
 
-		public static bool operator <=(HRDuration left, HRDuration right)
+		public static bool operator <=(DateDuration left, DateDuration right)
 		{
 			if (left == right) { return true; }
 			if (left < right) { return true; }
