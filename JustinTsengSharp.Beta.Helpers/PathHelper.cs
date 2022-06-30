@@ -1,5 +1,8 @@
 ﻿using System.IO;
 using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace JustinTsengSharp.Beta.Helpers
 {
@@ -8,6 +11,11 @@ namespace JustinTsengSharp.Beta.Helpers
 		public static string GetRandomFileNameWithoutExtension()
 		{
 			return Path.GetFileNameWithoutExtension(Path.GetRandomFileName());
+		}
+
+		public static string[] GetRandomFilesNameWithoutExtension(int count)
+		{
+			return Enumerable.Range(1, count).Select(x => GetRandomFileNameWithoutExtension()).ToArray();
 		}
 
 		public static string Combine(params string[] paths)

@@ -2,9 +2,10 @@
 
 namespace JustinTsengSharp.Beta.Helpers
 {
-	public class DictoryHelper
+	public class DirectoryHelper
+
 	{
-		public void IfNotExistsCreateDirectory(string path)
+		public static void IfNotExistsCreateDirectory(string path)
 		{
 			if (!Directory.Exists(path))
 			{
@@ -13,3 +14,4 @@ namespace JustinTsengSharp.Beta.Helpers
 		}
 	}
 }
+
