@@ -8,7 +8,7 @@ namespace JustinTsengSharp.Beta.Helpers
 {
 	public class FileHelper
 	{
-		public void IfNotExistsCreate(string path)
+		public static void IfNotExistsCreate(string path)
 		{
 			if (!File.Exists(path))
 			{

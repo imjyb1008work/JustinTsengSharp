@@ -6,6 +6,9 @@ namespace JustinTsengSharp.Beta.Helpers.Test
 	[TestClass]
 	public class HashHelperUnitTest
 	{
+
+
+
 		[TestMethod]
 		public void TestMethod1()
 		{

@@ -3,11 +3,15 @@
 	<PropertyGroup>
 		<TargetFrameworks>net35;netstandard2.0;</TargetFrameworks>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<AssemblyVersion>0.6.0.0</AssemblyVersion>
-		<FileVersion>0.6.0.0</FileVersion>
-		<Version>0.6.0</Version>
+		<AssemblyVersion>0.8.0.0</AssemblyVersion>
+		<FileVersion>0.8.0.0</FileVersion>
+		<Version>0.8.0</Version>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<NeutralLanguage />
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net35|AnyCPU'">
+	  <DocumentationFile>D:\imjyb1008workSource\JustinTsengSharp\JustinTsengSharp.Beta.Helpers\JustinTsengSharp.Beta.Helpers.xml</DocumentationFile>
 	</PropertyGroup>
 
 	<!-- Conditionally obtain references for the .NET Framework 4.0 target -->

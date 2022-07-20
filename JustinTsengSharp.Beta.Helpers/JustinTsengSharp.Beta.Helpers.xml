@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JustinTsengSharp.Beta.Helpers</name>
+    </assembly>
+    <members>
+        <member name="M:JustinTsengSharp.Beta.Helpers.StringHelper.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            此方法參考至微軟 string.IsNullOrWhiteSpace(String value) 的原始碼 
+            .net framework 3.5 並沒有實作 string.IsNullOrWhiteSpace(String value) 此方法
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
